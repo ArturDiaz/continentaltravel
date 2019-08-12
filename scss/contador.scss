@@ -1,0 +1,56 @@
+$blanco : #fff;
+$griss: rgba(230, 230, 230, 0.4);
+$celeste: #0074FF;
+$azul: #003A8F;
+$azulTrs: rgba(0, 57, 143, 0.171);
+$plomo: #4D4D4D;
+$naranja: #DA6207;
+$naranjaTrs: rgba(218, 98, 7, 1);
+
+.viajPlant{
+    padding: 25px 15%;
+
+    display: flex;
+    justify-content: space-between;
+    /*flex-wrap: wrap;*/
+
+    .contadMund{
+        width: 350px;
+        margin: 50px 0;
+
+        position: relative;
+        align-self: center;
+
+        .contadorViaj{
+            height: 100px;
+            background: #eee;
+        }
+        .indicText{
+            padding-left: 10px;
+            color: $plomo;
+            p{
+                color: $naranja;
+            }
+        }
+        .indicText:before{
+            content:"";
+            width: 4px;
+            height: 48px;
+            background: $naranja;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        img{
+            width: 100%;
+        }
+    }
+
+}
+
+@media (max-width: 800px){
+    .viajPlant{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,151 @@
+.acercaNosotros, .reconocimiento {
+  padding: 0 15%;
+}
+.acercaNosotros h1, .reconocimiento h1 {
+  text-align: center;
+  color: #003A8F;
+}
+.acercaNosotros .contnPrinc, .reconocimiento .contnPrinc {
+  padding: 50px 0;
+  display: flex;
+  /*flex-wrap: wrap;*/
+  justify-content: space-between;
+  position: relative;
+}
+.acercaNosotros .contnPrinc img, .reconocimiento .contnPrinc img {
+  width: 300px;
+  height: 230px;
+  padding-bottom: 30px;
+}
+.acercaNosotros .contnPrinc span::after, .reconocimiento .contnPrinc span::after {
+  content: "";
+  background: rgba(0, 57, 143, 0.5);
+  width: 300px;
+  height: 230px;
+  position: absolute;
+  top: 50px;
+}
+.acercaNosotros .contnPrinc p, .reconocimiento .contnPrinc p {
+  margin-left: 60px;
+  width: 400px;
+  align-self: center;
+  color: #4D4D4D;
+}
+.acercaNosotros .contnPrinc .imgNstr, .reconocimiento .contnPrinc .imgNstr {
+  position: absolute;
+  left: 50px;
+  top: 80px;
+}
+
+.reconocimiento {
+  height: 100%;
+  background: rgba(230, 230, 230, 0.4);
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+}
+.reconocimiento .contRecn {
+  width: 250px;
+  overflow: hidden;
+  display: block;
+}
+.reconocimiento .contRecn .imgenRecn {
+  width: 100%;
+  overflow: hidden;
+}
+.reconocimiento .contRecn .imgenRecn img {
+  width: 100%;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.reconocimiento .contRecn .imgenRecn:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  /*filter: saturate(70%);
+  -webkit-filter: saturate(70%);
+  -moz-filter: saturate(20%);
+  -o-filter: saturate(20%);*/
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.reconocimiento .contRecn .titul {
+  padding: 8px 0;
+}
+.reconocimiento .contRecn .titul h1 {
+  font-size: 18px;
+  text-align: initial;
+  padding: 3px 0;
+}
+.reconocimiento .contRecn .titul h3 {
+  font-size: 14px;
+  color: #4D4D4D;
+}
+.reconocimiento .contRecn .contParr {
+  font-size: 12px;
+  color: #4D4D4D;
+}
+.reconocimiento .contRecn .contParr ul {
+  list-style: none;
+  position: relative;
+}
+.reconocimiento .contRecn .contParr ul li {
+  padding: 1px 0 1px 15px;
+}
+.reconocimiento .contRecn .contParr ul li:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 8px solid #4D4D4D;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  left: 0;
+  margin: 3px 0;
+}
+
+@media (max-width: 800px) {
+  .contnPrinc {
+    flex-direction: column;
+  }
+  .contnPrinc .fondImg {
+    margin: 0 auto;
+  }
+  .contnPrinc p {
+    margin-left: 0px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 15px;
+    transform: translateX(-5%);
+  }
+  .contnPrinc .fondImg {
+    justify-content: center;
+  }
+  .contnPrinc .imgNstr {
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    /*transform: translateY(-100px);*/
+  }
+}
+@media (max-width: 700px) {
+  .reconocimiento .contRecn {
+    width: 100% !important;
+    margin: 30px 0;
+  }
+}
+
+/*# sourceMappingURL=acercaNosotros.css.map */

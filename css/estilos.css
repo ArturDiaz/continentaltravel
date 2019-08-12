@@ -1,0 +1,110 @@
+@import url("servicios.css");
+@import url("acercaNosotros.css");
+@import url("tecnologia.css");
+@import url("contador.css");
+@import url("contacto.css");
+@import url("footer.css");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+header {
+  padding: 25px 15%;
+  height: 500px;
+  background: url("/imagen/imagenHeader2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+header .logoCont {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+header .logoCont img {
+  width: 150px;
+}
+header .logoCont .fono {
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  transform: translateY(7px);
+}
+header hr {
+  margin: 15px 0 5px 0;
+  border: 0.5px solid rgba(230, 230, 230, 0.4);
+}
+header nav .menuInc {
+  display: flex;
+  justify-content: space-around;
+}
+header nav .menuInc li {
+  list-style: none;
+  padding: 7px 15px;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.35s;
+  /*p{
+      font-size: 8px;
+      color: $griss;
+      margin-top: -7px; 
+  }*/
+}
+header nav .menuInc li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+}
+header nav .menuInc li:before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #DA6207;
+  transition: width 0.3s;
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+header nav .menuInc hr {
+  margin-top: 8px;
+}
+header nav .menuInc li:hover {
+  background: #da6207;
+  transition: all 0.2s;
+}
+header nav .menuInc li:hover:before {
+  width: 100%;
+  height: 3px;
+  background: #DA6207;
+  position: absolute;
+  top: -7px;
+  left: 0;
+}
+header .headerCont {
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(270px);
+}
+header .headerCont h2 {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  header, .acercaNosotros, .reconocimiento, .tecnologia, .viajPlant, .contFoot {
+    padding: 25px 5%;
+  }
+}
+@media (max-width: 640px) {
+  header nav .menuInc {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

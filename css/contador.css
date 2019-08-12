@@ -1,0 +1,43 @@
+.viajPlant {
+  padding: 25px 15%;
+  display: flex;
+  justify-content: space-between;
+  /*flex-wrap: wrap;*/
+}
+.viajPlant .contadMund {
+  width: 350px;
+  margin: 50px 0;
+  position: relative;
+  align-self: center;
+}
+.viajPlant .contadMund .contadorViaj {
+  height: 100px;
+  background: #eee;
+}
+.viajPlant .contadMund .indicText {
+  padding-left: 10px;
+  color: #4D4D4D;
+}
+.viajPlant .contadMund .indicText p {
+  color: #DA6207;
+}
+.viajPlant .contadMund .indicText:before {
+  content: "";
+  width: 4px;
+  height: 48px;
+  background: #DA6207;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.viajPlant .contadMund img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .viajPlant {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=contador.css.map */
