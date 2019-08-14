@@ -6,6 +6,9 @@
   -moz-transform: translateY(-80px);
   font-size: 12px;
   transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -112,19 +115,20 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
   .services {
     flex-direction: column;
-    transform: translateY(0px);
+    /*transform: translateY(0px);
     -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    border: 2px solid #DA6207;
+    -moz-transform: translateY(0px);*/
   }
   .services .atenCorp, .services .depaVac {
-    width: 100% !important;
+    width: 75% !important;
+    border: 2px solid #DA6207;
   }
   .services .viajInc {
-    width: 95% !important;
+    width: 85% !important;
+    margin: auto !important;
   }
 }
 

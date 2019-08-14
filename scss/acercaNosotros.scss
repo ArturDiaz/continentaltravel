@@ -1,8 +1,9 @@
 $celeste: #0074FF;
 $azul: #003A8F;
-$azulTrs: rgba(0, 57, 143, 0.5);
+$azulTrs: rgba(0, 57, 143, 0.8);
 $griss: rgba(230, 230, 230, 0.4);
 $plomo: #4D4D4D;
+$naranja: #DA6207;
 
 .acercaNosotros, .reconocimiento{
     padding: 0 15%;
@@ -32,17 +33,31 @@ $plomo: #4D4D4D;
             position: absolute;
             top: 50px;
         }
-        p{
+        .parrafoLogo{
+            align-self: flex-end;
             margin-left: 60px;
             width: 400px;
-            align-self: center;
             color: $plomo;
+            .iconos{
+                padding-top: 25px;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 70px;
+                    height: 65px;
+                    
+                }
+            }
         }
         .imgNstr{
+            //box-shadow: 0 1px 15px black;
+            filter: drop-shadow(4px 4px 10px black);
             position: absolute;
             left: 50px;
             top: 80px;
         }
+        
     }
 }
 
@@ -66,7 +81,7 @@ $plomo: #4D4D4D;
     -o-flex-wrap: wrap;
 
     .contRecn{
-        
+        margin: 20px 0;
         width: 250px;
         overflow: hidden;
 
@@ -117,6 +132,8 @@ $plomo: #4D4D4D;
         .contParr{
             font-size: 12px;
             color: $plomo;
+            display: flex;
+            justify-content: space-between;
 
             ul{
                 list-style: none;
@@ -128,7 +145,7 @@ $plomo: #4D4D4D;
                     content: "";
                     width: 0;
                     height: 0;
-                    border-left: 8px solid $plomo;
+                    border-left: 8px solid $naranja;
                     border-top: 4px solid transparent;
                     border-bottom: 4px solid transparent;
                     position: absolute;
@@ -144,26 +161,51 @@ $plomo: #4D4D4D;
 @media (max-width: 800px){
     .contnPrinc{
         flex-direction: column;
+        padding: 0 5%;
+        position: relative;
 
+        img{
+            width: 100% !important;
+            /*height: 30% !important;*/
+        }
+        span::after{
+            
+            width: 100% !important;
+            /*height: 71% !important;
+            top: 50px !important;*/
+            
+        }
         .fondImg{
             margin: 0 auto;
         }
-        p{
-            margin-left: 0px;
-            margin-top: 25px;
-            text-align: center;
-            font-size: 15px;
+        .parrafoLogo{
+            width: 100% !important;
+            margin: 10px 0 !important;
 
-            transform: translateX(-5%);
+            .iconos{
+                padding-top: 30px;
+                display: flex;
+                justify-content: space-around;
+                
+                img{
+                    width: 50px !important;
+                    height: 45px !important;
+                    
+                }
+            }
         }
         .fondImg{
             justify-content: center;
             
         }
-        .imgNstr{
+        .imgNstr{ 
+            width: 330px !important;
+            height: 260px !important;
+            top: 35px !important;
+            left: 0px !important;
             right: 0;
-            left: 0;
-            margin: 0 auto;
+            bottom: 0;
+            margin: 0 auto !important;
             /*transform: translateY(-100px);*/
         }
     }
@@ -174,7 +216,12 @@ $plomo: #4D4D4D;
 
         .contRecn{
             width: 100% !important;
-            margin: 30px 0;
+            
+
+            .contParr{
+                //justify-content: space-around;
+            }
         }
     }
+    
  }

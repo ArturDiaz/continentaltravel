@@ -19,19 +19,29 @@
 }
 .acercaNosotros .contnPrinc span::after, .reconocimiento .contnPrinc span::after {
   content: "";
-  background: rgba(0, 57, 143, 0.5);
+  background: rgba(0, 57, 143, 0.8);
   width: 300px;
   height: 230px;
   position: absolute;
   top: 50px;
 }
-.acercaNosotros .contnPrinc p, .reconocimiento .contnPrinc p {
+.acercaNosotros .contnPrinc .parrafoLogo, .reconocimiento .contnPrinc .parrafoLogo {
+  align-self: flex-end;
   margin-left: 60px;
   width: 400px;
-  align-self: center;
   color: #4D4D4D;
 }
+.acercaNosotros .contnPrinc .parrafoLogo .iconos, .reconocimiento .contnPrinc .parrafoLogo .iconos {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.acercaNosotros .contnPrinc .parrafoLogo .iconos img, .reconocimiento .contnPrinc .parrafoLogo .iconos img {
+  width: 70px;
+  height: 65px;
+}
 .acercaNosotros .contnPrinc .imgNstr, .reconocimiento .contnPrinc .imgNstr {
+  filter: drop-shadow(4px 4px 10px black);
   position: absolute;
   left: 50px;
   top: 80px;
@@ -53,6 +63,7 @@
   -o-flex-wrap: wrap;
 }
 .reconocimiento .contRecn {
+  margin: 20px 0;
   width: 250px;
   overflow: hidden;
   display: block;
@@ -97,6 +108,8 @@
 .reconocimiento .contRecn .contParr {
   font-size: 12px;
   color: #4D4D4D;
+  display: flex;
+  justify-content: space-between;
 }
 .reconocimiento .contRecn .contParr ul {
   list-style: none;
@@ -109,7 +122,7 @@
   content: "";
   width: 0;
   height: 0;
-  border-left: 8px solid #4D4D4D;
+  border-left: 8px solid #DA6207;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   position: absolute;
@@ -120,31 +133,51 @@
 @media (max-width: 800px) {
   .contnPrinc {
     flex-direction: column;
+    padding: 0 5%;
+    position: relative;
+  }
+  .contnPrinc img {
+    width: 100% !important;
+    /*height: 30% !important;*/
+  }
+  .contnPrinc span::after {
+    width: 100% !important;
+    /*height: 71% !important;
+    top: 50px !important;*/
   }
   .contnPrinc .fondImg {
     margin: 0 auto;
   }
-  .contnPrinc p {
-    margin-left: 0px;
-    margin-top: 25px;
-    text-align: center;
-    font-size: 15px;
-    transform: translateX(-5%);
+  .contnPrinc .parrafoLogo {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+  .contnPrinc .parrafoLogo .iconos {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contnPrinc .parrafoLogo .iconos img {
+    width: 50px !important;
+    height: 45px !important;
   }
   .contnPrinc .fondImg {
     justify-content: center;
   }
   .contnPrinc .imgNstr {
+    width: 330px !important;
+    height: 260px !important;
+    top: 35px !important;
+    left: 0px !important;
     right: 0;
-    left: 0;
-    margin: 0 auto;
+    bottom: 0;
+    margin: 0 auto !important;
     /*transform: translateY(-100px);*/
   }
 }
 @media (max-width: 700px) {
   .reconocimiento .contRecn {
     width: 100% !important;
-    margin: 30px 0;
   }
 }
 

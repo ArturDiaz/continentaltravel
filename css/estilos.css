@@ -10,16 +10,26 @@
 }
 
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 header {
   padding: 25px 15%;
   height: 500px;
-  background: url("/imagen/imagenHeader2.jpg");
+  background: url("/imagen/headerBanner2.jpg");
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center center;
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
+  transition: all 0.5s;
 }
 header .logoCont {
   color: #fff;
@@ -33,27 +43,36 @@ header .logoCont .fono {
   font-size: 14px;
   display: flex;
   align-items: flex-end;
-  transform: translateY(7px);
+  transform: translateY(2px);
+}
+header .fixHed {
+  width: 70%;
+  position: fixed;
+  z-index: 30000;
+  transition: all 0.5s;
+}
+header #iconMenu {
+  display: none;
+}
+header .menuDespl, header label {
+  display: none;
 }
 header hr {
   margin: 15px 0 5px 0;
   border: 0.5px solid rgba(230, 230, 230, 0.4);
+  display: none;
 }
 header nav .menuInc {
   display: flex;
   justify-content: space-around;
 }
 header nav .menuInc li {
+  width: 100%;
+  text-align: center;
   list-style: none;
-  padding: 7px 15px;
-  border-radius: 3px;
+  margin: 50px 0px;
   position: relative;
   transition: all 0.35s;
-  /*p{
-      font-size: 8px;
-      color: $griss;
-      margin-top: -7px; 
-  }*/
 }
 header nav .menuInc li a {
   text-decoration: none;
@@ -62,35 +81,55 @@ header nav .menuInc li a {
 }
 header nav .menuInc li:before {
   content: "";
-  width: 0%;
-  height: 3px;
-  background: #DA6207;
-  transition: width 0.3s;
+  width: 100%;
+  height: 2px;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
   position: absolute;
-  top: -7px;
+  top: -30px;
   left: 0;
+  right: 0;
+  margin: auto;
+}
+header nav .menuInc li span {
+  width: 100%;
+  height: 0px;
+  padding: 15px 0;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
 }
 header nav .menuInc hr {
   margin-top: 8px;
 }
-header nav .menuInc li:hover {
-  background: #da6207;
-  transition: all 0.2s;
-}
 header nav .menuInc li:hover:before {
+  content: "";
+  cursor: pointer;
   width: 100%;
-  height: 3px;
-  background: #DA6207;
+  height: 5px;
   position: absolute;
-  top: -7px;
+  top: -20px;
   left: 0;
+}
+header nav .menuInc li:hover span {
+  width: 100%;
+  height: 10px;
+  transition: all 0.2s;
+  background: rgba(255, 255, 255, 0.2);
 }
 header .headerCont {
   color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
-  transform: translateY(270px);
+  transform: translateY(300px);
 }
 header .headerCont h2 {
   color: #fff;
@@ -100,11 +139,144 @@ header .headerCont h2 {
   header, .acercaNosotros, .reconocimiento, .tecnologia, .viajPlant, .contFoot {
     padding: 25px 5%;
   }
+  header .fixHed, .acercaNosotros .fixHed, .reconocimiento .fixHed, .tecnologia .fixHed, .viajPlant .fixHed, .contFoot .fixHed {
+    width: 90%;
+  }
 }
 @media (max-width: 640px) {
-  header nav .menuInc {
+  header {
+    /**/
+  }
+  header .logoCont {
+    justify-content: center !important;
+    padding: 18px 0;
+  }
+  header .logoCont .fono {
     display: none;
   }
+  header .fixHed {
+    position: fixed;
+    z-index: 50000;
+    background: #003A8F;
+    box-shadow: 0 2px 5px black;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  header nav {
+    background: rgba(0, 57, 143, 0.685);
+    width: 100%;
+    height: 100vh;
+    margin-top: 11px;
+    transform: translateX(-100%) !important;
+    -webkit-transform: translateX(-100%) !important;
+    -moz-transform: translateX(-100%) !important;
+    -o-transform: translateX(-100%) !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+  }
+  header nav .menuInc {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  header nav .menuInc li {
+    padding: 0px 0;
+    margin: 25px 0px;
+  }
+  header nav .menuInc li span {
+    padding-left: 15px;
+    justify-content: start;
+  }
+  header .menuDespl {
+    display: flex;
+    float: right;
+    font-size: 30px;
+    transform: translateY(-50px);
+  }
+  header label {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 50px;
+    float: right;
+    margin-right: 15px;
+    transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-55px);
+    position: relative;
+  }
+  header label .btn_men {
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+  }
+  header label .btn_men:before, header label .btn_men:after {
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+  }
+  header label .btn_men:before {
+    top: 12px;
+    left: 0;
+  }
+  header label .btn_men:after {
+    top: 24px;
+    left: 0;
+  }
+  header label:active .btn_men {
+    transform: rotate(10deg);
+  }
+  header #iconMenu:checked ~ nav {
+    transform: translateX(0%) !important;
+    transition: all 0.2s;
+  }
+  header .headerCont {
+    transform: translateY(340px);
+  }
+
+  .animacionH:before {
+    display: none;
+  }
+}
+.animacion {
+  top: 0;
+  padding-top: 10px;
+  transition: all 0.5s;
+}
+
+.animacionH:before {
+  content: "";
+  width: 100%;
+  height: 120px;
+  background: rgba(0, 57, 143, 0.95);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  box-shadow: 0 2px 6px black;
+}
+
+.seleccionado {
+  background: rgba(255, 255, 255, 0.2);
+  /*width: 100%;
+  height: 135%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+
+  border-radius: 0 0 15px 15px;*/
+  transition: all 0.2s;
 }
 
 /*# sourceMappingURL=estilos.css.map */
