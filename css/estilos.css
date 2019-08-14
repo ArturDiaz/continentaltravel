@@ -267,15 +267,14 @@ header .headerCont h2 {
 
 .seleccionado {
   background: rgba(255, 255, 255, 0.2);
-  /*width: 100%;
-  height: 135%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0px;
   left: 0;
-  display: flex;
-  justify-content: space-around;
-
-  border-radius: 0 0 15px 15px;*/
+  /*display: flex;
+  justify-content: space-around;*/
+  border-radius: 0 0 15px 15px;
   transition: all 0.2s;
 }
 
