@@ -55,7 +55,24 @@ header{
         img{
             width: 150px;
         }
+        #btnHeaderVc{
+            border: 2px solid rgba($naranja, 1) !important;
+            background: rgba($blanco, 0.1);
+            padding: 7px 20px;
+            cursor: pointer;
+            border-radius: 20px;
+            border-style: none;
+            font-size: 18px;
+            text-decoration: none;
+            color: $blanco;
 
+            box-shadow: 0 2px 7px black;
+            transform: translateY(7px);
+
+        }
+        #btnHeaderVc:hover{
+            background: rgba($blanco, 0.3);
+        }
         .fono{
             font-size: 14px;
             display: flex;
@@ -169,6 +186,14 @@ header{
                 }
             }
         }
+        #btn_6vc{
+            color: $blanco;
+            
+            display: none;
+            a{
+                text-decoration: none;
+            }
+        }
     }
     .headerCont{
         color: $blanco;
@@ -177,13 +202,43 @@ header{
         display: flex;
         flex-direction: column;
         
-        transform: translateY(300px);
+        transform: translateY(250px);
 
 
         h2{
-            color: $blanco;
+            color: rgba($blanco, 0.6);
+            font-size: 17px;
+            font-family: 'Quicksand', sans-serif;
         }
-        
+        .botnsPrinc{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }   
+            #misvacaciones, #vermas{
+                padding: 8px 30px;
+                margin: 20px;
+                cursor: pointer;
+                border-radius: 20px;
+                border-style: none;
+                font-size: 18px;
+                text-decoration: none;
+                box-shadow: 0 2px 7px black;
+            }
+            #misvacaciones{
+                background: $naranja;
+                color: $blanco;
+                
+            }
+            #vermas{
+                background: none;
+                color: $blanco;
+                border: 1px solid $blanco;
+            }
+            #misvacaciones:hover, #vermas:hover{
+                background: rgba($blanco, 0.3);
+            }
     }
 }
 
@@ -221,11 +276,15 @@ header{
             top: 0;
             left: 0;
         }
+        #btnHeaderVc{
+           display: none;
+        }
+        
         nav{           
-            background: $azulMen;
+            background: rgba($azul,0.9);
             width: 100%;
             height: 100vh;
-            margin-top: 11px;
+            margin-top: 9px;
             
             transform: translateX(-100%) !important;
             -webkit-transform: translateX(-100%)!important;
@@ -235,6 +294,7 @@ header{
             -webkit-transition: all 0.2s;
             -moz-transition: all 0.2s;
             -o-transition: all 0.2s;
+
             .menuInc{
                 flex-direction: column;
                 cursor: pointer;
@@ -249,6 +309,14 @@ header{
                    
                 }
             }
+                    #btn_6vc{
+                        padding: 15px 150px;
+                        background: $naranja;
+                        border-radius: 0 0 50px 50px !important;
+                    }
+                    #btn_6vc:hover{
+                        background: rgba($blanco,0.5);
+                    }
         }
         
         .menuDespl{
@@ -310,7 +378,12 @@ header{
         }
         .headerCont{
             
-            transform: translateY(340px);   
+            transform: translateY(200px);
+            
+            #misvacaciones, #vermas{
+                width: 100%;
+                margin: 10px;
+            }
         }
     }
 
@@ -325,6 +398,9 @@ header{
 
 // ------ Otros Estilos ------- //
 
+.Mvacaciones{
+    display: none;
+}
 .animacion{
     top: 0;
     padding-top: 10px;
