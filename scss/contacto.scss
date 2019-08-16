@@ -7,27 +7,25 @@ $plomo: #4D4D4D;
 $naranja: #DA6207;
 $naranjaTrs: rgba(218, 98, 7, 1);
 
-.contact{
 
-    margin-top: 100px;
-    background: url(../imagen/fondCont.jpg);
+.contact{
+    background: url("../imagen/contactos.jpg");
     background-size: cover;
-    background-position: center center;
-    
+    background-position: center top;
     display: flex;
     justify-content: center;
     position: relative;
-    
+    /*.fondImag{
+        background: $griss;
+        width: 100%;
+        height: 200px;
+    }*/
     .formul{
         background: $blanco;
         width: 400px;
-        
+        box-shadow: 0 0 5px rgba($plomClar,0.5);
         padding: 45px;
         z-index: 50;
-
-        transform: translateY(-100px);
-        -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
 
         .registForm{
             height: 100%;
@@ -60,7 +58,6 @@ $naranjaTrs: rgba(218, 98, 7, 1);
             }
             #btnEnviar:hover{
                 background: $plomClar;
-                //color: $plomo;
                 border: 0.5px solid $plomClar;
                 transition: all 0.2s;
                 -webkit-transition: all 0.2s;
@@ -97,7 +94,7 @@ $naranjaTrs: rgba(218, 98, 7, 1);
             }
         }
     }
-    .somb{
+    /*.somb{
         box-shadow: 0 0 5px $plomClar;
         width: 490px;
         height: 100px;
@@ -107,20 +104,33 @@ $naranjaTrs: rgba(218, 98, 7, 1);
         right: 0;
         margin: auto;
 
-        transform: translateY(-100px);
-        -webkit-transform: translateY(-100px);
-        -moz-transform: translateY(-100px);
     }
+    .somb:before{
+        content: "";
+        box-shadow: 0 0 5px $plomClar;
+        width: 490px;
+        height: 100px;
+        position: absolute;
+        top: 380px;
+        bottom: 0px;
+        left: 0px;*/
+        //margin: auto;
+
+    //}
 }
-.contact:before{
+/*.contact:after{
     content: "";
-    background: $azulTrs;
+    background: url(../imagen/fondCont.jpg);
+    background-size: cover;
+    background-position: center center;
     width: 100%;
-    height: 100%;
+    height: 300px;
     position: absolute;
     top: 0;
     left: 0;
-}
+    bottom: 0;
+    margin: auto;
+}*/
 
 
 @media (max-width: 620px){
@@ -129,7 +139,7 @@ $naranjaTrs: rgba(218, 98, 7, 1);
            width: 100% !important;
        }
    }
-   .somb{
+   /*.somb{
     width: 100% !important;
-   }
+   }*/
 }

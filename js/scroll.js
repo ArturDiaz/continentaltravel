@@ -9,11 +9,11 @@ $(document).ready(function(){
         if(ubicacionPrinc <= 200){
             $('#fixHed').removeClass("animacion");
             $('#inicio').removeClass("animacionH");
-            $('#btnHeaderVc').addClass("Mvacaciones");
+            //$('#btnHeaderVc').addClass("Mvacaciones");
         }else{
             $('#fixHed').addClass("animacion");
             $('#inicio').addClass("animacionH");  
-            $('#btnHeaderVc').removeClass("Mvacaciones");
+            //$('#btnHeaderVc').removeClass("Mvacaciones");
         }
         ubicacionPrinc = desplazamientoActual;
     }
@@ -23,7 +23,7 @@ $(document).ready(function(){
     $("#inicio .fixHed .menuInc a").click(function(){
 		var seccion = $(this).attr("href");
 		$("body, html").animate({
-			scrollTop: $(seccion).offset().top-155
+			scrollTop: $(seccion).offset().top-120
 		},800);
 		return false;
     });
@@ -31,10 +31,10 @@ $(document).ready(function(){
 // ---------- scroll por paginas ---------- //
 
 var inicio = $("#inicio").offset().top;
-var servicios = $("#servicios").offset().top-10;
-var nosotros = $("#acercaNosotros").offset().top-180;
-var tecnologia = $("#tecnologia").offset().top-70;
-var contactanos = $("#contactanos").offset().top-250;
+var servicios = $("#servicios").offset().top;
+var nosotros = $("#acercaNosotros").offset().top;
+var tecnologia = $("#tecnologia").offset().top;
+var contactanos = $("#contactanos").offset().top;
     
 $(window).on("scroll", function(){
     var scroll1 = $(window).scrollTop();

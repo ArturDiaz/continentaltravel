@@ -76,13 +76,4 @@ $(document).ready(function(){
 
 
 
-    // ---------- botones sin links ------- //
-
-    /*var misvacaciones = $("#misvacaciones");
-    var vermas = $("#vermas");
-
-    misvacaciones.click(function(){
-        var ubicacion= '';
-        ubicacion.href ='';
-    });*/
 });

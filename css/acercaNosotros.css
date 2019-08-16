@@ -11,19 +11,19 @@
   /*flex-wrap: wrap;*/
   justify-content: space-between;
   position: relative;
+  /*span::after{
+      content: "";
+      background: $azulTrs;
+      width: 300px;
+      height: 230px;
+      position: absolute;
+      top: 50px;
+  }*/
 }
 .acercaNosotros .contnPrinc img, .reconocimiento .contnPrinc img {
   width: 300px;
   height: 230px;
   padding-bottom: 30px;
-}
-.acercaNosotros .contnPrinc span::after, .reconocimiento .contnPrinc span::after {
-  content: "";
-  background: rgba(0, 57, 143, 0.8);
-  width: 300px;
-  height: 230px;
-  position: absolute;
-  top: 50px;
 }
 .acercaNosotros .contnPrinc .parrafoLogo, .reconocimiento .contnPrinc .parrafoLogo {
   align-self: flex-end;
@@ -41,7 +41,7 @@
   height: 65px;
 }
 .acercaNosotros .contnPrinc .imgNstr, .reconocimiento .contnPrinc .imgNstr {
-  filter: drop-shadow(4px 4px 10px black);
+  filter: drop-shadow(3px 3px 5px rgba(77, 77, 77, 0.5));
   position: absolute;
   left: 50px;
   top: 80px;
@@ -71,6 +71,8 @@
 .reconocimiento .contRecn .imgenRecn {
   width: 100%;
   overflow: hidden;
+  -webkit-overflow: hidden;
+  -moz-overflow: hidden;
 }
 .reconocimiento .contRecn .imgenRecn img {
   width: 100%;

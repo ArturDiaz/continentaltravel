@@ -17,6 +17,9 @@ header {
   padding: 25px 15%;
   height: 500px;
   background: url("/imagen/headerBanner2.jpg");
+  -webkit-background: url("/imagen/headerBanner2.jpg");
+  -moz-background: url("/imagen/headerBanner2.jpg");
+  -o-background: url("/imagen/headerBanner2.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -30,6 +33,9 @@ header {
   -moz-background-repeat: no-repeat;
   -o-background-repeat: no-repeat;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 header .logoCont {
   color: #fff;
@@ -40,32 +46,51 @@ header .logoCont img {
   width: 150px;
 }
 header .logoCont #btnHeaderVc {
-  border: 2px solid #da6207 !important;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 7px 20px;
+  align-self: center;
+  background: rgba(255, 0, 0, 0.9);
+  padding: 5px 15px;
   cursor: pointer;
-  border-radius: 20px;
   border-style: none;
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   color: #fff;
-  box-shadow: 0 2px 7px black;
+  box-shadow: 0 1px 5px #4D4D4D;
+  -webkit-box-shadow: 0 1px 5px #4D4D4D;
+  -moz-box-shadow: 0 1px 5px #4D4D4D;
+  -o-box-shadow: 0 1px 5px #4D4D4D;
   transform: translateY(7px);
+  -webkit-transform: translateY(7px);
+  -moz-transform: translateY(7px);
+  -o-transform: translateY(7px);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 header .logoCont #btnHeaderVc:hover {
   background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 header .logoCont .fono {
   font-size: 14px;
   display: flex;
   align-items: flex-end;
   transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -o-transform: translateY(2px);
 }
 header .fixHed {
   width: 70%;
   position: fixed;
   z-index: 30000;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 header #iconMenu {
   display: none;
@@ -89,11 +114,16 @@ header nav .menuInc li {
   margin: 50px 0px;
   position: relative;
   transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -o-transition: all 0.35s;
 }
 header nav .menuInc li a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
+  width: 100%;
+  padding: 8px 0;
 }
 header nav .menuInc li:before {
   content: "";
@@ -102,6 +132,9 @@ header nav .menuInc li:before {
   justify-content: center;
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
   position: absolute;
   top: -30px;
   left: 0;
@@ -112,7 +145,6 @@ header nav .menuInc li span {
   width: 100%;
   height: 0px;
   padding: 15px 0;
-  border-radius: 0 0 15px 15px;
   position: absolute;
   top: -20px;
   left: 0;
@@ -121,6 +153,9 @@ header nav .menuInc li span {
   align-items: center;
   justify-content: center;
   transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 header nav .menuInc hr {
   margin-top: 8px;
@@ -138,21 +173,26 @@ header nav .menuInc li:hover span {
   width: 100%;
   height: 10px;
   transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
   background: rgba(255, 255, 255, 0.2);
 }
 header nav #btn_6vc {
-  color: #fff;
   display: none;
-}
-header nav #btn_6vc a {
-  text-decoration: none;
+  /*a{
+      text-decoration: none;
+  }*/
 }
 header .headerCont {
   color: #fff;
   text-align: center;
   display: flex;
   flex-direction: column;
-  transform: translateY(250px);
+  transform: translateY(300px);
+  -webkit-transform: translateY(300px);
+  -moz-transform: translateY(300px);
+  -o-transform: translateY(300px);
 }
 header .headerCont h2 {
   color: rgba(255, 255, 255, 0.6);
@@ -160,32 +200,34 @@ header .headerCont h2 {
   font-family: "Quicksand", sans-serif;
 }
 header .headerCont .botnsPrinc {
-  display: flex;
-  flex-wrap: wrap;
+  display: none;
   justify-content: center;
   margin-top: 20px;
 }
-header .headerCont #misvacaciones, header .headerCont #vermas {
+header .headerCont #misvacaciones {
+  background: #ff0000;
+  color: #fff;
   padding: 8px 30px;
   margin: 20px;
   cursor: pointer;
-  border-radius: 20px;
   border-style: none;
   font-size: 18px;
   text-decoration: none;
-  box-shadow: 0 2px 7px black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
-header .headerCont #misvacaciones {
-  background: #DA6207;
-  color: #fff;
-}
-header .headerCont #vermas {
-  background: none;
-  color: #fff;
-  border: 1px solid #fff;
-}
-header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
+header .headerCont #misvacaciones:hover {
   background: rgba(255, 255, 255, 0.3);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -212,6 +254,9 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
     z-index: 50000;
     background: #003A8F;
     box-shadow: 0 2px 5px black;
+    -webkit-box-shadow: 0 2px 5px black;
+    -moz-box-shadow: 0 2px 5px black;
+    -o-box-shadow: 0 2px 5px black;
     width: 100%;
     height: 80px;
     margin: 0;
@@ -247,18 +292,34 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
     justify-content: start;
   }
   header nav #btn_6vc {
-    padding: 15px 150px;
-    background: #DA6207;
-    border-radius: 0 0 50px 50px !important;
+    display: flex;
+    padding: 15px 0px;
+    background: rgba(255, 0, 0, 0.9);
+    justify-content: center;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+  }
+  header nav #btn_6vc a {
+    text-decoration: none;
+    color: #fff;
   }
   header nav #btn_6vc:hover {
     background: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
   }
   header .menuDespl {
     display: flex;
     float: right;
     font-size: 30px;
     transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
   }
   header label {
     display: flex;
@@ -298,15 +359,30 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
   }
   header label:active .btn_men {
     transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
   }
   header #iconMenu:checked ~ nav {
     transform: translateX(0%) !important;
+    -webkit-transform: translateX(0%) !important;
+    -moz-transform: translateX(0%) !important;
+    -o-transform: translateX(0%) !important;
     transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
   }
   header .headerCont {
     transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -o-transform: translateY(200px);
   }
-  header .headerCont #misvacaciones, header .headerCont #vermas {
+  header .headerCont .botnsPrinc {
+    display: flex;
+  }
+  header .headerCont #misvacaciones {
     width: 100%;
     margin: 10px;
   }
@@ -323,6 +399,9 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
   top: 0;
   padding-top: 10px;
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .animacionH:before {
@@ -334,7 +413,10 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
   top: 0;
   left: 0;
   z-index: 200;
-  box-shadow: 0 2px 6px black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .seleccionado {
@@ -344,10 +426,10 @@ header .headerCont #misvacaciones:hover, header .headerCont #vermas:hover {
   position: absolute;
   top: 0px;
   left: 0;
-  /*display: flex;
-  justify-content: space-around;*/
-  border-radius: 0 0 15px 15px;
   transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
 }
 
 /*# sourceMappingURL=estilos.css.map */

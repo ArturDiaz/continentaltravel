@@ -1,5 +1,17 @@
 .tecnologia {
   background: url("../imagen/fond-tecnol.png");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center center;
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
   padding: 25px 15%;
 }
 .tecnologia .tecnDes {

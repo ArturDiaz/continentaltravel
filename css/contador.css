@@ -14,6 +14,9 @@
   height: 100px;
   background: #eee;
 }
+.viajPlant .contadMund #contadorViaj {
+  overflow: hidden;
+}
 .viajPlant .contadMund .indicText {
   padding-left: 10px;
   color: #4D4D4D;
