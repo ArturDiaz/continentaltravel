@@ -15,27 +15,23 @@ $naranja: #DA6207;
     }
     .contnPrinc{
         padding: 50px 0;
+        
         display: flex;
-        /*flex-wrap: wrap;*/
         justify-content: space-between;
         position: relative;
 
-        img{
+        .fondImg{
             width: 300px;
             height: 230px;
             padding-bottom: 30px;
+            background: url("../imagen/nosotros-somb.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size:500px 230px;
         }
-        /*span::after{
-            content: "";
-            background: $azulTrs;
-            width: 300px;
-            height: 230px;
-            position: absolute;
-            top: 50px;
-        }*/
         .parrafoLogo{
             align-self: flex-end;
-            margin-left: 60px;
+            margin-left: 90px;
             width: 400px;
             color: $plomo;
             .iconos{
@@ -45,14 +41,16 @@ $naranja: #DA6207;
                 
                 img{
                     width: 60px;
-                    height: 65px;
+                    height: 60px;
                     
                 }
             }
         }
         .imgNstr{
-            //box-shadow: 0 1px 15px black;
+            width: 300px;
+            height: 230px;
             filter: drop-shadow(3px 3px 5px rgba($plomo,0.5));
+            -webkit-filter: drop-shadow(3px 3px 5px rgba($plomo,0.5));
             position: absolute;
             left: 50px;
             top: 80px;
@@ -190,8 +188,8 @@ $naranja: #DA6207;
                 justify-content: space-around;
                 
                 img{
-                    width: 50px !important;
-                    height: 45px !important;
+                    width: 90px !important;
+                    height: 90px !important;
                     
                 }
             }
@@ -214,16 +212,32 @@ $naranja: #DA6207;
 }
 
 @media (max-width: 700px){
+    
     .reconocimiento{
 
         .contRecn{
             width: 100% !important;
             
-
-            .contParr{
-                //justify-content: space-around;
-            }
         }
     }
     
+ }
+
+ @media (max-width: 550px){
+    .acercaNosotros{
+        .contnPrinc{
+            .parrafoLogo{
+                .iconos img{
+                    width: 90px !important;
+                    height: 90px !important;
+                }
+            }
+        }
+    }
+    .imgenRecn:hover img{
+            transform: scale(1) !important;
+            -webkit-transform: scale(1) !important;
+            -moz-transform: scale(0);
+            -o-transform: scale(0);
+    }
  }

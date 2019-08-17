@@ -107,7 +107,6 @@ $imgD2: url("../imagen/edifIcon2.png");
 
     .atenCorp:hover, .depaVac:hover{
         font-size: 13px;
-        cursor: pointer;
         color: $blanco;
         background: $naranja;
         box-shadow: 0 1px 7px rgba($plomo,0.5);
@@ -131,7 +130,6 @@ $imgD2: url("../imagen/edifIcon2.png");
     }
     .viajInc:hover{
         font-size: 14px;
-        cursor: pointer;
         color: $plomo;
         background: $blanco;
         box-shadow: 0 1px 7px rgba($plomo,0.5);
@@ -152,6 +150,52 @@ $imgD2: url("../imagen/edifIcon2.png");
 
 
 @media (max-width: 550px){
+    #servicios{
+        width: 100%;
+    }
+    .services{
+
+        .atenCorp:hover, .depaVac:hover{
+            background: $blanco;
+            width: 100px;
+            height: 130px;
+            box-shadow: 0 2px 10px $azulTrs;
+            align-self: center;
+            padding: 15px;
+            color: $azul;
+            font-size: 12px;
+
+            .imagen1{
+                width: 40px;
+                height: 40px;
+                background: $imgU1;
+                background-size: 40px 40px;
+            }
+            .imagen3{
+                width: 40px;
+                height: 40px;
+                background: $imgD1;
+                background-size: 40px 40px;
+                //-webkit-background-size: 40px 40px;
+            }
+        }
+        .viajInc:hover{
+            background: $azul;
+            width: 120px;
+            height: 140px;
+            box-shadow: 0 1px 10px $azul;
+            color: $blanco;
+            padding: 20px;
+            font-size: 12px;
+            .imagen2{
+                width: 60px;
+                height: 40px;
+                background: $imgV1;
+                background-size: 60px 40px;
+                //-webkit-background-size: 40px 40px;
+            }
+        }
+    }
    /* .services{
         flex-direction: column;
         //transform: translateY(0px);

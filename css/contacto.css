@@ -4,37 +4,12 @@
   background-position: center top;
   display: flex;
   justify-content: center;
-  position: relative;
-  /*.fondImag{
-      background: $griss;
-      width: 100%;
-      height: 200px;
-  }*/
-  /*.somb{
-      box-shadow: 0 0 5px $plomClar;
-      width: 490px;
-      height: 100px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-
-  }
-  .somb:before{
-      content: "";
-      box-shadow: 0 0 5px $plomClar;
-      width: 490px;
-      height: 100px;
-      position: absolute;
-      top: 380px;
-      bottom: 0px;
-      left: 0px;*/
 }
 .contact .formul {
   background: #fff;
   width: 400px;
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.5);
+  transform: translateY(10px);
   padding: 45px;
   z-index: 50;
 }
@@ -101,27 +76,49 @@
   color: rgba(128, 128, 128, 0.8);
 }
 
-/*.contact:after{
-    content: "";
-    background: url(../imagen/fondCont.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}*/
-@media (max-width: 620px) {
-  .contact .formul {
+.redesSociales {
+  height: 150px;
+  background: #fff;
+  display: flex;
+}
+.redesSociales .fond {
+  padding: 0 15%;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: #e6e6e6;
+  align-self: center;
+  justify-content: space-between;
+}
+.redesSociales .fond .iconos, .redesSociales .fond .fond-t {
+  align-self: center;
+}
+.redesSociales .fond i {
+  font-size: 20px;
+  align-self: center;
+  color: #4D4D4D;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.redesSociales .fond .icon-rss, .redesSociales .fond .icon-phone {
+  font-size: 18px;
+}
+
+@media (max-width: 550px) {
+  #contactanos {
     width: 100% !important;
   }
 
-  /*.somb{
-   width: 100% !important;
-  }*/
+  .contact {
+    margin: 15px 0 !important;
+  }
+  .contact .formul {
+    width: 70% !important;
+    padding: 20px !important;
+  }
+  .contact .formul .registForm {
+    margin: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=contacto.css.map */

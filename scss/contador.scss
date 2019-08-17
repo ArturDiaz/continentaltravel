@@ -28,10 +28,6 @@ $naranjaTrs: rgba(218, 98, 7, 1);
         #contadorViaj{
             
             overflow: hidden;
-
-            span{
-                
-            }
         }
         .indicText{
             padding-left: 10px;
@@ -53,6 +49,100 @@ $naranjaTrs: rgba(218, 98, 7, 1);
         img{
             width: 100%;
         }
+        .anim-nortAme, .anim-sudAme, .anim-europ, .anim-afric, .anim-asia, .anim-ocea, .anim-paises1, .anim-paises2{
+            width: 20px;
+            height: 30px;
+            background: url("../icon/indicador.png");
+            background-size: 20px 30px;
+            -webkit-background-size: 20px 30px;
+            -moz-background-size: 20px 30px;
+            -o-background-size: 20px 30px;
+
+            position: absolute;
+
+            .textoM{
+                width: 80px;
+                text-align: center;
+                background: rgba($blanco, 0.8);
+                font-size: 11px;
+                position: absolute;
+                top: -12px;
+                left: -30px;
+            }
+        }
+        .anim-nortAme{
+            top: 25px;
+            left: 60px;
+
+            animation: indicador 4.5s infinite;
+            -webkit-animation: indicador 4.5s infinite;
+            -moz-animation: indicador 4.5s infinite;
+            -o-animation: indicador 4.5s infinite;
+        }
+        .anim-sudAme{
+            bottom: 60px;
+            left: 95px;
+
+            animation: indicador 2.3s infinite;
+            -webkit-animation: indicador 2.3s infinite;
+            -moz-animation: indicador 2.3s infinite;
+            -o-animation: indicador 2.3s infinite;
+        }
+        .anim-europ{
+            top: 45px;
+            left: 160px;
+
+            animation: indicador 6.8s infinite;
+            -webkit-animation: indicador 6.8s infinite;
+            -moz-animation: indicador 6.8s infinite;
+            -o-animation: indicador 6.8s infinite;
+        }
+        .anim-afric{
+            top: 85px;
+            left: 170px;
+
+            animation: indicador 3.5s infinite;
+            -webkit-animation: indicador 3.5s infinite;
+            -moz-animation: indicador 3.5s infinite;
+            -o-animation: indicador 3.5s infinite;
+        }
+        .anim-asia{
+            top: 32px;
+            right: 50px;
+
+            animation: indicador 4.0s infinite;
+            -webkit-animation: indicador 4.0s infinite;
+            -moz-animation: indicador 4s infinite;
+            -o-animation: indicador 4s infinite;
+        }
+        .anim-ocea{
+            bottom: 50px;
+            right: 50px;
+
+            animation: indicador 5.80s infinite;
+            -webkit-animation: indicador 5.8s infinite;
+            -moz-animation: indicador 5.8s infinite;
+            -o-animation: indicador 5.8s infinite;
+        }
+        .anim-paises1{
+            top: 50px;
+            right: 90px;
+
+            animation: indicador 8.0s infinite;
+            -webkit-animation: indicador 8s infinite;
+            -moz-animation: indicador 8s infinite;
+            -o-animation: indicador 8s infinite;
+        }
+        .anim-paises2{
+            top: 80px;
+            left: 60px;
+
+            animation: indicador 8.0s infinite;
+            -webkit-animation: indicador 8s infinite;
+            -moz-animation: indicador 8s infinite;
+            -o-animation: indicador 8s infinite;
+        }
+        
     }
 
 }
@@ -60,5 +150,17 @@ $naranjaTrs: rgba(218, 98, 7, 1);
 @media (max-width: 800px){
     .viajPlant{
         flex-direction: column;
+    }
+}
+
+@keyframes indicador {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

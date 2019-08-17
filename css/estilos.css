@@ -44,6 +44,7 @@ header .logoCont {
 }
 header .logoCont img {
   width: 150px;
+  height: 40px;
 }
 header .logoCont #btnHeaderVc {
   align-self: center;
@@ -234,12 +235,18 @@ header .headerCont #misvacaciones:hover {
   header, .acercaNosotros, .reconocimiento, .tecnologia, .viajPlant, .contFoot {
     padding: 25px 5%;
   }
-  header .fixHed, .acercaNosotros .fixHed, .reconocimiento .fixHed, .tecnologia .fixHed, .viajPlant .fixHed, .contFoot .fixHed {
+
+  header .fixHed {
     width: 90%;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 550px) {
+  header, .acercaNosotros, .reconocimiento, .tecnologia, .viajPlant, .contFoot {
+    padding: 0px 3%;
+  }
+
   header {
+    width: 94% !important;
     /**/
   }
   header .logoCont {

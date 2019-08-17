@@ -13,17 +13,15 @@ $naranjaTrs: rgba(218, 98, 7, 1);
     background-size: cover;
     background-position: center top;
     display: flex;
+    //flex-direction: column;
     justify-content: center;
-    position: relative;
-    /*.fondImag{
-        background: $griss;
-        width: 100%;
-        height: 200px;
-    }*/
+    //position: relative;
+    
     .formul{
         background: $blanco;
         width: 400px;
         box-shadow: 0 0 5px rgba($plomClar,0.5);
+        transform: translateY(10px);
         padding: 45px;
         z-index: 50;
 
@@ -94,52 +92,57 @@ $naranjaTrs: rgba(218, 98, 7, 1);
             }
         }
     }
-    /*.somb{
-        box-shadow: 0 0 5px $plomClar;
-        width: 490px;
-        height: 100px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
+    
+}
+
+.redesSociales{
+    //width: 100%;
+    height: 150px;
+    background: $blanco;
+    display: flex;
+    
+    .fond{
+        padding: 0 15%;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background: $griss;
+        align-self: center;
+        justify-content: space-between;
+        .iconos, .fond-t{
+            align-self: center;
+        }
+        i{
+            font-size: 20px;
+            align-self: center;
+            color: $plomo;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .icon-rss, .icon-phone{
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+@media (max-width: 550px){
+    #contactanos{
+        width: 100% !important;
+        
+    }
+   .contact{
+        margin: 15px 0 !important;
+       .formul{
+            width: 70% !important;
+            padding: 20px !important;
+        
+            .registForm{
+                margin: 0px !important;
+            }
+        }
 
     }
-    .somb:before{
-        content: "";
-        box-shadow: 0 0 5px $plomClar;
-        width: 490px;
-        height: 100px;
-        position: absolute;
-        top: 380px;
-        bottom: 0px;
-        left: 0px;*/
-        //margin: auto;
-
-    //}
-}
-/*.contact:after{
-    content: "";
-    background: url(../imagen/fondCont.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-}*/
-
-
-@media (max-width: 620px){
-   .contact{
-       .formul{
-           width: 100% !important;
-       }
-   }
-   /*.somb{
-    width: 100% !important;
-   }*/
+    
 }

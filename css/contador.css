@@ -36,10 +36,104 @@
 .viajPlant .contadMund img {
   width: 100%;
 }
+.viajPlant .contadMund .anim-nortAme, .viajPlant .contadMund .anim-sudAme, .viajPlant .contadMund .anim-europ, .viajPlant .contadMund .anim-afric, .viajPlant .contadMund .anim-asia, .viajPlant .contadMund .anim-ocea, .viajPlant .contadMund .anim-paises1, .viajPlant .contadMund .anim-paises2 {
+  width: 20px;
+  height: 30px;
+  background: url("../icon/indicador.png");
+  background-size: 20px 30px;
+  -webkit-background-size: 20px 30px;
+  -moz-background-size: 20px 30px;
+  -o-background-size: 20px 30px;
+  position: absolute;
+}
+.viajPlant .contadMund .anim-nortAme .textoM, .viajPlant .contadMund .anim-sudAme .textoM, .viajPlant .contadMund .anim-europ .textoM, .viajPlant .contadMund .anim-afric .textoM, .viajPlant .contadMund .anim-asia .textoM, .viajPlant .contadMund .anim-ocea .textoM, .viajPlant .contadMund .anim-paises1 .textoM, .viajPlant .contadMund .anim-paises2 .textoM {
+  width: 80px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  position: absolute;
+  top: -12px;
+  left: -30px;
+}
+.viajPlant .contadMund .anim-nortAme {
+  top: 25px;
+  left: 60px;
+  animation: indicador 4.5s infinite;
+  -webkit-animation: indicador 4.5s infinite;
+  -moz-animation: indicador 4.5s infinite;
+  -o-animation: indicador 4.5s infinite;
+}
+.viajPlant .contadMund .anim-sudAme {
+  bottom: 60px;
+  left: 95px;
+  animation: indicador 2.3s infinite;
+  -webkit-animation: indicador 2.3s infinite;
+  -moz-animation: indicador 2.3s infinite;
+  -o-animation: indicador 2.3s infinite;
+}
+.viajPlant .contadMund .anim-europ {
+  top: 45px;
+  left: 160px;
+  animation: indicador 6.8s infinite;
+  -webkit-animation: indicador 6.8s infinite;
+  -moz-animation: indicador 6.8s infinite;
+  -o-animation: indicador 6.8s infinite;
+}
+.viajPlant .contadMund .anim-afric {
+  top: 85px;
+  left: 170px;
+  animation: indicador 3.5s infinite;
+  -webkit-animation: indicador 3.5s infinite;
+  -moz-animation: indicador 3.5s infinite;
+  -o-animation: indicador 3.5s infinite;
+}
+.viajPlant .contadMund .anim-asia {
+  top: 32px;
+  right: 50px;
+  animation: indicador 4s infinite;
+  -webkit-animation: indicador 4s infinite;
+  -moz-animation: indicador 4s infinite;
+  -o-animation: indicador 4s infinite;
+}
+.viajPlant .contadMund .anim-ocea {
+  bottom: 50px;
+  right: 50px;
+  animation: indicador 5.8s infinite;
+  -webkit-animation: indicador 5.8s infinite;
+  -moz-animation: indicador 5.8s infinite;
+  -o-animation: indicador 5.8s infinite;
+}
+.viajPlant .contadMund .anim-paises1 {
+  top: 50px;
+  right: 90px;
+  animation: indicador 8s infinite;
+  -webkit-animation: indicador 8s infinite;
+  -moz-animation: indicador 8s infinite;
+  -o-animation: indicador 8s infinite;
+}
+.viajPlant .contadMund .anim-paises2 {
+  top: 80px;
+  left: 60px;
+  animation: indicador 8s infinite;
+  -webkit-animation: indicador 8s infinite;
+  -moz-animation: indicador 8s infinite;
+  -o-animation: indicador 8s infinite;
+}
 
 @media (max-width: 800px) {
   .viajPlant {
     flex-direction: column;
+  }
+}
+@keyframes indicador {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

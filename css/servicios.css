@@ -77,7 +77,6 @@
 }
 .services .atenCorp:hover, .services .depaVac:hover {
   font-size: 13px;
-  cursor: pointer;
   color: #fff;
   background: #DA6207;
   box-shadow: 0 1px 7px rgba(77, 77, 77, 0.5);
@@ -99,7 +98,6 @@
 }
 .services .viajInc:hover {
   font-size: 14px;
-  cursor: pointer;
   color: #4D4D4D;
   background: #fff;
   box-shadow: 0 1px 7px rgba(77, 77, 77, 0.5);
@@ -116,6 +114,48 @@
 }
 
 @media (max-width: 550px) {
+  #servicios {
+    width: 100%;
+  }
+
+  .services .atenCorp:hover, .services .depaVac:hover {
+    background: #fff;
+    width: 100px;
+    height: 130px;
+    box-shadow: 0 2px 10px rgba(0, 57, 143, 0.171);
+    align-self: center;
+    padding: 15px;
+    color: #003A8F;
+    font-size: 12px;
+  }
+  .services .atenCorp:hover .imagen1, .services .depaVac:hover .imagen1 {
+    width: 40px;
+    height: 40px;
+    background: url("../imagen/usuaIcon.png");
+    background-size: 40px 40px;
+  }
+  .services .atenCorp:hover .imagen3, .services .depaVac:hover .imagen3 {
+    width: 40px;
+    height: 40px;
+    background: url("../imagen/edifIcon.png");
+    background-size: 40px 40px;
+  }
+  .services .viajInc:hover {
+    background: #003A8F;
+    width: 120px;
+    height: 140px;
+    box-shadow: 0 1px 10px #003A8F;
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+  }
+  .services .viajInc:hover .imagen2 {
+    width: 60px;
+    height: 40px;
+    background: url("../imagen/avionIcon.png");
+    background-size: 60px 40px;
+  }
+
   /* .services{
        flex-direction: column;
        //transform: translateY(0px);

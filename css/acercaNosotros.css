@@ -8,26 +8,21 @@
 .acercaNosotros .contnPrinc, .reconocimiento .contnPrinc {
   padding: 50px 0;
   display: flex;
-  /*flex-wrap: wrap;*/
   justify-content: space-between;
   position: relative;
-  /*span::after{
-      content: "";
-      background: $azulTrs;
-      width: 300px;
-      height: 230px;
-      position: absolute;
-      top: 50px;
-  }*/
 }
-.acercaNosotros .contnPrinc img, .reconocimiento .contnPrinc img {
+.acercaNosotros .contnPrinc .fondImg, .reconocimiento .contnPrinc .fondImg {
   width: 300px;
   height: 230px;
   padding-bottom: 30px;
+  background: url("../imagen/nosotros-somb.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 500px 230px;
 }
 .acercaNosotros .contnPrinc .parrafoLogo, .reconocimiento .contnPrinc .parrafoLogo {
   align-self: flex-end;
-  margin-left: 60px;
+  margin-left: 90px;
   width: 400px;
   color: #4D4D4D;
 }
@@ -38,10 +33,13 @@
 }
 .acercaNosotros .contnPrinc .parrafoLogo .iconos img, .reconocimiento .contnPrinc .parrafoLogo .iconos img {
   width: 60px;
-  height: 65px;
+  height: 60px;
 }
 .acercaNosotros .contnPrinc .imgNstr, .reconocimiento .contnPrinc .imgNstr {
+  width: 300px;
+  height: 230px;
   filter: drop-shadow(3px 3px 5px rgba(77, 77, 77, 0.5));
+  -webkit-filter: drop-shadow(3px 3px 5px rgba(77, 77, 77, 0.5));
   position: absolute;
   left: 50px;
   top: 80px;
@@ -160,8 +158,8 @@
     justify-content: space-around;
   }
   .contnPrinc .parrafoLogo .iconos img {
-    width: 50px !important;
-    height: 45px !important;
+    width: 90px !important;
+    height: 90px !important;
   }
   .contnPrinc .fondImg {
     justify-content: center;
@@ -180,6 +178,19 @@
 @media (max-width: 700px) {
   .reconocimiento .contRecn {
     width: 100% !important;
+  }
+}
+@media (max-width: 550px) {
+  .acercaNosotros .contnPrinc .parrafoLogo .iconos img {
+    width: 90px !important;
+    height: 90px !important;
+  }
+
+  .imgenRecn:hover img {
+    transform: scale(1) !important;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
   }
 }
 
