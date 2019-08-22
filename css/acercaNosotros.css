@@ -51,74 +51,140 @@
   padding-top: 70px;
   padding-bottom: 70px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  /*justify-content: space-between;
   -webkit-justify-content: space-between;
   -moz-justify-content: space-between;
   -o-justify-content: space-between;
+
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
+  -o-flex-wrap: wrap;*/
+  /*.contRecn{
+      margin: 20px 0;
+      width: 250px;
+      overflow: hidden;
+
+      display: block;
+
+      .imgenRecn{
+          width: 100%;
+          overflow: hidden;
+          -webkit-overflow: hidden;
+          -moz-overflow: hidden;
+
+          img{
+              width: 100%;
+
+              transition: all 0.2s;   
+              -webkit-transition: all 0.2s;
+              -moz-transition: all 0.2s; 
+              -o-transition: all 0.2s;
+          }
+      }
+      .imgenRecn:hover img{
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -o-transform: scale(1.2);
+
+          /*filter: saturate(70%);
+          -webkit-filter: saturate(70%);
+          -moz-filter: saturate(20%);
+          -o-filter: saturate(20%);*/
+  /*        transition: all 0.2s;
+          -webkit-transition: all 0.2s;
+          -moz-transition: all 0.2s; 
+          -o-transition: all 0.2s;
+      }
+
+      .titul{
+          padding: 8px 0;
+          h1{
+              font-size: 18px;
+              text-align: initial;
+              padding: 3px 0;
+          }
+          h3{
+              font-size: 14px;
+              color: $plomo;
+          }
+      }
+      .contParr{
+          font-size: 12px;
+          color: $plomo;
+          display: flex;
+          justify-content: space-between;
+
+          ul{
+              list-style: none;
+              position: relative;
+              li{
+                  padding: 1px 0 1px 15px;
+              }
+              li:before{
+                  content: "";
+                  width: 0;
+                  height: 0;
+                  border-left: 8px solid $naranja;
+                  border-top: 4px solid transparent;
+                  border-bottom: 4px solid transparent;
+                  position: absolute;
+                  left: 0;
+
+                  margin: 3px 0;
+              }
+          }
+      }
+  }*/
 }
-.reconocimiento .contRecn {
-  margin: 20px 0;
-  width: 250px;
-  overflow: hidden;
-  display: block;
-}
-.reconocimiento .contRecn .imgenRecn {
+.reconocimiento .cajaRec1, .reconocimiento .cajaRec2, .reconocimiento .cajaRec3 {
   width: 100%;
-  overflow: hidden;
-  -webkit-overflow: hidden;
-  -moz-overflow: hidden;
+  height: 400px;
+  margin: 15px 0;
 }
-.reconocimiento .contRecn .imgenRecn img {
-  width: 100%;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
+.reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm3 {
+  background: #fff;
+  width: 40%;
+  height: 200px;
+  padding: 45px;
+  box-shadow: 0 0 7px rgba(77, 77, 77, 0.5);
 }
-.reconocimiento .contRecn .imgenRecn:hover img {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  /*filter: saturate(70%);
-  -webkit-filter: saturate(70%);
-  -moz-filter: saturate(20%);
-  -o-filter: saturate(20%);*/
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -o-transition: all 0.2s;
+.reconocimiento .cajaRec1 .contenRecm1 h1, .reconocimiento .cajaRec1 .contenRecm2 h1, .reconocimiento .cajaRec1 .contenRecm3 h1, .reconocimiento .cajaRec2 .contenRecm1 h1, .reconocimiento .cajaRec2 .contenRecm2 h1, .reconocimiento .cajaRec2 .contenRecm3 h1, .reconocimiento .cajaRec3 .contenRecm1 h1, .reconocimiento .cajaRec3 .contenRecm2 h1, .reconocimiento .cajaRec3 .contenRecm3 h1 {
+  text-align: start;
+  color: #2c2c2c;
 }
-.reconocimiento .contRecn .titul {
-  padding: 8px 0;
-}
-.reconocimiento .contRecn .titul h1 {
-  font-size: 18px;
-  text-align: initial;
-  padding: 3px 0;
-}
-.reconocimiento .contRecn .titul h3 {
+.reconocimiento .cajaRec1 .contenRecm1 h3, .reconocimiento .cajaRec1 .contenRecm2 h3, .reconocimiento .cajaRec1 .contenRecm3 h3, .reconocimiento .cajaRec2 .contenRecm1 h3, .reconocimiento .cajaRec2 .contenRecm2 h3, .reconocimiento .cajaRec2 .contenRecm3 h3, .reconocimiento .cajaRec3 .contenRecm1 h3, .reconocimiento .cajaRec3 .contenRecm2 h3, .reconocimiento .cajaRec3 .contenRecm3 h3 {
   font-size: 14px;
   color: #4D4D4D;
 }
-.reconocimiento .contRecn .contParr {
+.reconocimiento .cajaRec1 .contenRecm1 p, .reconocimiento .cajaRec1 .contenRecm2 p, .reconocimiento .cajaRec1 .contenRecm3 p, .reconocimiento .cajaRec2 .contenRecm1 p, .reconocimiento .cajaRec2 .contenRecm2 p, .reconocimiento .cajaRec2 .contenRecm3 p, .reconocimiento .cajaRec3 .contenRecm1 p, .reconocimiento .cajaRec3 .contenRecm2 p, .reconocimiento .cajaRec3 .contenRecm3 p {
+  margin: 15px 0;
+  color: #666666;
+  font-size: 14px;
+}
+.reconocimiento .cajaRec1 .contenRecm1, .reconocimiento .cajaRec2 .contenRecm1, .reconocimiento .cajaRec3 .contenRecm1 {
+  transform: translateX(80%) translateY(28%);
+}
+.reconocimiento .cajaRec1 .contenRecm2, .reconocimiento .cajaRec2 .contenRecm2, .reconocimiento .cajaRec3 .contenRecm2 {
+  transform: translateX(0%) translateY(13%);
+}
+.reconocimiento .cajaRec1 .contenRecm2 .contParr, .reconocimiento .cajaRec2 .contenRecm2 .contParr, .reconocimiento .cajaRec3 .contenRecm2 .contParr {
+  margin: 15px 0;
   font-size: 12px;
   color: #4D4D4D;
   display: flex;
   justify-content: space-between;
 }
-.reconocimiento .contRecn .contParr ul {
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul {
   list-style: none;
   position: relative;
 }
-.reconocimiento .contRecn .contParr ul li {
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul li, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul li, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul li {
   padding: 1px 0 1px 15px;
 }
-.reconocimiento .contRecn .contParr ul li:before {
+.reconocimiento .cajaRec1 .contenRecm2 .contParr ul li:before, .reconocimiento .cajaRec2 .contenRecm2 .contParr ul li:before, .reconocimiento .cajaRec3 .contenRecm2 .contParr ul li:before {
   content: "";
   width: 0;
   height: 0;
@@ -128,6 +194,25 @@
   position: absolute;
   left: 0;
   margin: 3px 0;
+}
+.reconocimiento .cajaRec1 .contenRecm3, .reconocimiento .cajaRec2 .contenRecm3, .reconocimiento .cajaRec3 .contenRecm3 {
+  transform: translateX(80%) translateY(0%);
+}
+.reconocimiento .cajaRec1 {
+  background: url("../imagen/caja1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.reconocimiento .cajaRec2 {
+  background: url("../imagen/caja2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+.reconocimiento .cajaRec3 {
+  background: url("../imagen/caja3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 800px) {

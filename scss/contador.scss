@@ -23,7 +23,34 @@ $naranjaTrs: rgba(218, 98, 7, 1);
 
         .contadorViaj{
             height: 100px;
-            background: #eee;
+            margin-top: 25px;
+            padding: 5px;
+            background: rgba(238, 238, 238, 0.8);
+            display: flex;
+            .contadr{
+                //background: red;
+                width: 100%;
+                height: 85%;
+                margin: 5px;
+                overflow: hidden;
+
+                .cont_inicio{
+                    animation: contadorNum 2000ms ease-in-out infinite;
+                    -webkit-animation: contadorNum 2000ms ease-in-out infinite;
+                }
+
+                .cont_medio{
+                    width: 100%;
+                    animation: contadorNum 1000ms ease-in-out infinite;
+                    -webkit-animation: contadorNum 1000ms ease-in-out infinite;
+                }
+
+                .cont_ultim{
+                    width: 100%;
+                    animation: contadorNum 900ms linear infinite;
+                    -webkit-animation: contadorNum 900ms linear infinite;
+                }
+            }
         }
         #contadorViaj{
             
@@ -162,5 +189,57 @@ $naranjaTrs: rgba(218, 98, 7, 1);
     }
     100%{
         opacity: 0;
+    }
+}
+@-webkit-keyframes indicador {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes contadorNum{
+    0%{
+        transform: translateY(-1800px);
+        -webkit-transform: translateY(-1800px);
+        -moz-transform: translateY(-1800px);
+        -o-transform: translateY(-1800px);
+    }
+    50%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+@-webkit-keyframes contadorNum{
+    0%{
+        transform: translateY(-1800px);
+        -webkit-transform: translateY(-1800px);
+        -moz-transform: translateY(-1800px);
+        -o-transform: translateY(-1800px);
+    }
+    50%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -o-transform: translateY(0px);
     }
 }

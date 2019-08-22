@@ -4,6 +4,7 @@
 @import url("contador.css");
 @import url("contacto.css");
 @import url("footer.css");
+@import url("flotante.css");
 * {
   margin: 0px;
   padding: 0px;
@@ -181,9 +182,6 @@ header nav .menuInc li:hover span {
 }
 header nav #btn_6vc {
   display: none;
-  /*a{
-      text-decoration: none;
-  }*/
 }
 header .headerCont {
   color: #fff;
@@ -197,8 +195,9 @@ header .headerCont {
 }
 header .headerCont h2 {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 17px;
-  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-family: "Muli", sans-serif;
+  font-weight: normal;
 }
 header .headerCont .botnsPrinc {
   display: none;

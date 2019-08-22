@@ -88,7 +88,7 @@
   height: 50px;
   background: #e6e6e6;
   align-self: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .redesSociales .fond .iconos, .redesSociales .fond .fond-t {
   align-self: center;
@@ -99,9 +99,13 @@
   color: #4D4D4D;
   cursor: pointer;
   margin-right: 5px;
+  filter: opacity(0.5);
 }
 .redesSociales .fond .icon-rss, .redesSociales .fond .icon-phone {
   font-size: 18px;
+}
+.redesSociales .fond i:hover {
+  filter: opacity(1);
 }
 
 @media (max-width: 550px) {

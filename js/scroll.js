@@ -31,13 +31,13 @@ $(document).ready(function(){
 // ---------- scroll por paginas ---------- //
 
 var inicio = $("#inicio").offset().top;
-var servicios = $("#servicios").offset().top;
-var nosotros = $("#acercaNosotros").offset().top;
-var tecnologia = $("#tecnologia").offset().top;
-var contactanos = $("#contactanos").offset().top;
+var servicios = $("#servicios").offset().top-80;
+var nosotros = $("#acercaNosotros").offset().top-80;
+var tecnologia = $("#tecnologia").offset().top-80;
+var contactanos = $("#contactanos").offset().top-80;
     
 $(window).on("scroll", function(){
-    var scroll1 = $(window).scrollTop();
+    var scroll1 = $(window).scrollTop()+50;
         
     if(scroll1 >= inicio ){
         $(".btn_1").addClass("seleccionado");

@@ -32,9 +32,27 @@ cuentRegresiv('Dic 30 2019 10:32:52 GMT-0500','contadorViaj');
 
 $(document).ready(function(){
 
-   
+   //------------ Flotante -----------//
+
+   var flotante = $(".flotante");
+		setTimeout(function (){
+			flotante.addClass('mostrar');
+		},10000);
+
+
+        $(".cerrarFlot").click(function(){
+          $(".flotante").addClass("cerrarF");  
+          $(".flotante").removeClass("mostrar");
+        });
+
+        $(".ingresFlot").click(function(){
+            $(".flotante").addClass("cerrarF");  
+            $(".flotante").removeClass("mostrar");
+          });
+
+
     // ------ Formulario ------------ //
-    var btnEnviar = $("#btnEnviar");
+    /*var btnEnviar = $("#btnEnviar");
 
 
 
@@ -72,8 +90,7 @@ $(document).ready(function(){
             $("#telefono").val("");
             $("#msjErrorT").html("");
         }
-    });
-
+    });*/
 
 
 });

@@ -1,32 +1,87 @@
+$plomo: #8F8F8F;
+$blanco: #fff;
 
-.contFoot{
-    margin-bottom: 15px;
-    padding: 25px 15%;
+footer{
+    background: $plomo;
+    padding: 20px 15%;
+    .sedes{
+        display: flex;
+        justify-content: space-between;
+        color: $blanco;
+        margin: 10px 0;
+        .ubicSe{
+            width: 340px;
+            height: 100px;
+            padding: 0px;
+            margin: 5px 0;
+            display: flex;
 
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    /*.links{
-
-        a:nth-child(1){
-            margin: 15px;
+            img{
+                width: 70px;
+                height: 60px;
+                align-self: center;
+            }
+            .contSeds{
+                flex-direction: column;
+                align-self: center;
+                h3{
+                    font-size: 14px;
+                    margin-bottom: -5px;
+                    font-weight: normal;
+                }
+                h1{
+                    font-size: 25px;
+                }
+                .sedsTex{
+                    display: flex;
+                    font-size: 13px;
+                    
+                    p{
+                        align-self: center;
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .guion{
+                width: 1px;
+                height: 87px;
+                background: $blanco;
+                margin: 0px 10px;
+                align-self: center;
+            }
+            
         }
-    }*/
+    }
+    
+    .contFoot{
+        color: $blanco;
+        padding: 5px 15%;
+        text-align: center;
+    
+        display: flex;
+        justify-content: center;
+        //flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 600px){
-    /*.contFoot{
-        flex-direction: column-reverse;
-        text-align: center;
-        .copyright{
-            margin-top: 15px;
+@media (max-width: 992px){
+    footer{
+        //width: 100%;
+        padding: 25px 5%;
+        .sedes{
+            justify-content: center;
+            flex-wrap: wrap;
         }
-        .links{
+    }
+}
 
-            a:nth-child(1){
-                margin: 5px !important;
-            }
-        }
-    }*/
+@media (max-width: 550px){
+    footer{
+        padding: 30px 5% !important;
+    }
+    .sedes{
+        justify-content: center;
+        color: $blanco;
+        margin: 10px 0;
+    }
 }

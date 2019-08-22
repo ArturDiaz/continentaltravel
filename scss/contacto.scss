@@ -108,7 +108,7 @@ $naranjaTrs: rgba(218, 98, 7, 1);
         height: 50px;
         background: $griss;
         align-self: center;
-        justify-content: space-between;
+        justify-content: center;
         .iconos, .fond-t{
             align-self: center;
         }
@@ -118,9 +118,13 @@ $naranjaTrs: rgba(218, 98, 7, 1);
             color: $plomo;
             cursor: pointer;
             margin-right: 5px;
+            filter: opacity(0.5);
         }
         .icon-rss, .icon-phone{
             font-size: 18px;
+        }
+        i:hover{
+            filter: opacity(1);
         }
     }
 }
