@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -105,6 +105,10 @@ header hr {
   border: 0.5px solid rgba(230, 230, 230, 0.4);
   display: none;
 }
+header nav {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
 header nav .menuInc {
   display: flex;
   justify-content: space-around;
@@ -126,6 +130,7 @@ header nav .menuInc li a {
   font-size: 15px;
   width: 100%;
   padding: 8px 0;
+  letter-spacing: 1px;
 }
 header nav .menuInc li:before {
   content: "";
@@ -194,10 +199,20 @@ header .headerCont {
   -o-transform: translateY(300px);
 }
 header .headerCont h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   font-size: 18px;
-  font-family: "Muli", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: normal;
+  letter-spacing: 8px;
+}
+header .headerCont h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+header .headerCont h1 span {
+  font-weight: lighter;
+  font-family: "Raleway", sans-serif;
 }
 header .headerCont .botnsPrinc {
   display: none;

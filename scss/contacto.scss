@@ -9,7 +9,7 @@ $naranjaTrs: rgba(218, 98, 7, 1);
 
 
 .contact{
-    background: url("../imagen/contactos.jpg");
+    background: url("../imagen/contactosBanr.png");
     background-size: cover;
     background-position: center top;
     display: flex;
@@ -22,6 +22,11 @@ $naranjaTrs: rgba(218, 98, 7, 1);
         width: 400px;
         box-shadow: 0 0 5px rgba($plomClar,0.5);
         transform: translateY(10px);
+        -webkit-transform: translateY(10px);
+        -moz-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        border-top: 2px solid $naranja;
+        border-bottom: 2px solid $naranja;
         padding: 45px;
         z-index: 50;
 
@@ -56,7 +61,6 @@ $naranjaTrs: rgba(218, 98, 7, 1);
             }
             #btnEnviar:hover{
                 background: $plomClar;
-                border: 0.5px solid $plomClar;
                 transition: all 0.2s;
                 -webkit-transition: all 0.2s;
                 -moz-transition: all 0.2s;

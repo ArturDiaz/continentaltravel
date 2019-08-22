@@ -11,6 +11,7 @@ $naranjaTrs: rgba(218, 98, 7, 0.5);
 $sombra: rgba(0,0,0,0.5);
 $fuente1: 'Muli', sans-serif;
 $fuente2: 'Ubuntu', sans-serif;
+$fuente3: 'Raleway', sans-serif;
 
 @import url("servicios.css");
 @import url("acercaNosotros.css");
@@ -28,7 +29,7 @@ $fuente2: 'Ubuntu', sans-serif;
 
 body{
     //font-family: ;
-    font-family: $fuente1;
+    font-family: $fuente3;
 }
 
 header{
@@ -136,7 +137,8 @@ header{
     }
     
     nav{
-        
+        font-family: $fuente3;
+        font-weight: bold;
         .menuInc{
             display: flex;
             justify-content: space-around;
@@ -159,6 +161,7 @@ header{
                     font-size: 15px;
                     width: 100%;
                     padding: 8px 0;
+                    letter-spacing:1px;
                 }
 
                 &:before{
@@ -244,10 +247,20 @@ header{
 
 
         h2{
-            color: rgba($blanco, 0.6);
+            color: $blanco;
             font-size: 18px;
-            font-family: $fuente1;
+            font-family: $fuente3;
             font-weight: normal;
+            letter-spacing:8px;
+        }
+        h1{
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing:2px;
+            span{
+                font-weight: lighter;
+                font-family: $fuente3;
+            }
         }
         .botnsPrinc{
             display: none;

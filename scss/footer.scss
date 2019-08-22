@@ -1,9 +1,23 @@
 $plomo: #8F8F8F;
 $blanco: #fff;
+$azul: #003A8F;
 
 footer{
     background: $plomo;
     padding: 20px 15%;
+    .logoFoo{
+        width: 140px;
+        height: 35px;
+        background: $azul;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        margin: -20px auto 0 auto;
+        img{
+            width: 140px;
+            height: 35px;
+        }
+    }
     .sedes{
         display: flex;
         justify-content: space-between;
@@ -66,8 +80,10 @@ footer{
 
 @media (max-width: 992px){
     footer{
-        //width: 100%;
         padding: 25px 5%;
+        .logoFoo{
+            margin-top: -25px;
+        }
         .sedes{
             justify-content: center;
             flex-wrap: wrap;
@@ -78,6 +94,9 @@ footer{
 @media (max-width: 550px){
     footer{
         padding: 30px 5% !important;
+        .logoFoo{
+            margin-top: -30px;
+        }
     }
     .sedes{
         justify-content: center;
